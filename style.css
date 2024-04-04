@@ -1,0 +1,177 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+ul li a,
+ol li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn {
+  font-weight: 900;
+  transition: opacity 0.5s;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn--lg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(77, 150, 168);
+  padding-block: 1rem;
+  padding-inline: 2.5rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  color: rgb(250, 250, 250);
+}
+.btn--lg span {
+  padding-inline-start: 0.25rem;
+  color: rgb(143, 227, 249);
+}
+
+.btn--sm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(133, 95, 177);
+  padding-block: 1rem;
+  padding-inline: 1.75rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  color: rgb(250, 250, 250);
+}
+
+html {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  display: grid;
+  place-content: stretch;
+  min-height: 100dvh;
+  background-color: rgb(250, 250, 250);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block-start: 3rem;
+  text-align: center;
+}
+header .logo {
+  margin-block-end: 3.375rem;
+}
+header .banner {
+  margin-block-end: 3rem;
+}
+header .group-chat--section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 1.5rem;
+  max-width: 540px;
+}
+header .group-chat--section h1 {
+  margin-inline: auto;
+  max-width: 10ch;
+  color: rgb(40, 40, 61);
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  padding-block-end: 1.5rem;
+}
+header .group-chat--section p {
+  color: rgb(135, 135, 157);
+  font-size: 1rem;
+  line-height: 1.625rem;
+  padding-block-end: 2rem;
+}
+header .group-chat--section .wrapper--btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+main {
+    padding-inline: 1.5rem;
+    text-align: center;
+    position: relative;
+  }
+  main .wrapper--grid {
+    margin-block-end: 3.75rem;
+  }
+  main .wrapper--grid .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    place-items: center;
+  }
+  main .wrapper--grid .grid img {
+    border-radius: 0.5rem;
+  }
+  main .modern-meetings--section {
+    margin-inline: auto;
+    max-width: 540px;
+  }
+  main .modern-meetings--section p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(135, 135, 157);
+    line-height: 1.625rem;
+  }
+  main .modern-meetings--section .subtitle {
+    color: rgb(77, 150, 168);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    padding-block-end: 1.5rem;
+  }
+  main .modern-meetings--section h2 {
+    margin-inline: auto;
+    max-width: 15ch;
+    color: rgb(40, 40, 61);
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    padding-block-end: 2rem;
+  }
+  
